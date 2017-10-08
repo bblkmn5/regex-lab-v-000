@@ -8,7 +8,7 @@ end
 
 # \b needed to match word boundaries when no brackets used
 def words_five_letters_long(text)
-  text.scan(/\w{5}\b/)
+  text.scan(/\b\w{5}\b/)
 end
 
 # \W is the same as [+-.,!?@#$%^&*();\/|<>"']

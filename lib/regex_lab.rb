@@ -6,8 +6,9 @@ def words_starting_with_un_and_ending_with_ing(text)
   text.scan(/un\w+ing/)
 end
 
+# \b needed to match word boundaries when no brackets used
 def words_five_letters_long(text)
-  text.scan(/\b\w{5}\b/)
+  text.scan(/(\w{5})/)
 end
 
 # \W is the same as [+-.,!?@#$%^&*();\/|<>"']

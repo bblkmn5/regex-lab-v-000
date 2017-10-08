@@ -8,7 +8,7 @@ end
 
 # \b needed to only use parameter for each individual word (anchor a word boundary)
 def words_five_letters_long(text)
-  text.scan(/\b\w{5}\b/)
+  text.scan(/\b\w{5}/)
 end
 
 # \W is the same as [+-.,!?@#$%^&*();\/|<>"']
